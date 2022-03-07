@@ -6,13 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ryan Fulford - Web Developer</title>
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="https://kit.fontawesome.com/359f9b0fe9.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header>
+  <header id="home">
     <div class="wrapper">
       <nav class="header-nav">
-        <img class="logo" src="./assets/enso-logo_peach.png" alt="Calligraphy brush stroke of an Enso circle">
+        <img class="logo" src="./assets/rf-enso-logo_light-peach_200x200.png" alt="Calligraphy brush stroke of an Enso circle">
         <ul>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
@@ -20,16 +21,21 @@
         </ul>
       </nav>
 
-      <h1>Ryan Fulford</h1>
-      <p class="job-title"><span>Web Developer</span></p>
-    </div>
-  </header>
+      <div class="header-title">
+        <h1>Ryan Fulford</h1>
+        <p class="job-title"><span>Web Developer</span></p>
+        <a href="#about"><i class="fas fa-chevron-circle-down"></i></a>
+      </div>
+    </div> <!-- .wrapper ENDS -->
+  </header> <!-- header ENDS -->
 
   <main>
     <section id="about" class="about">
       <div class="wrapper">
         <div class="about-text">
-          <h2>About</h2>
+          <div class="sub-heading">
+            <h2>About</h2>
+          </div>
           <div class="about-copy">
             <p>A philosopher turned web-developer. A journey shaped by the connection between people and information.</p>
             <p>Naturally introspective and driven by singular purpose; to cultivate a digital future based on inclusivity. Focused on eliminating technological barriers through clean, accessible code.</p>
@@ -39,11 +45,104 @@
                 <p class="quote">Don't explain your philosophy. Embody it.</p>
                 <figcaption>—Epictetus</figcaption>
             </blockquote>
-          </div>
+          </div> <!-- .about-copy ENDS -->
+        </div> <!-- .about-text ENDS -->
+
+        <div class="toolkit">
+          <h2>Toolkit</h2>
+          <div class="skills">
+            <ul>
+              <li><img src="./assets/toolkit_html5.png" alt=""></li>
+              <li><img src="./assets/toolkit_css3.png" alt=""></li>
+              <li><img src="./assets/toolkit_sass.png" alt=""></li>
+              <li><img src="./assets/toolkit_javascript.png" alt=""></li>
+              <li><img src="./assets/toolkit_jquery.png" alt=""></li>
+              <li><img src="./assets/toolkit_react.png" alt=""></li>
+              <li><img src="./assets/toolkit_firebase.png" alt=""></li>
+              <li><img src="./assets/toolkit_responsive.png" alt=""></li>
+              <li><img src="./assets/toolkit_accessibility.png" alt=""></li>
+              <li><img src="./assets/toolkit_git.png" alt=""></li>
+              <li><img src="./assets/toolkit_github.png" alt=""></li>
+              <li><img src="./assets/toolkit_vscode.png" alt=""></li>
+            </ul>
+          </div> <!-- .skills ENDS -->
+        </div> <!-- .toolkit ENDS -->
+      </div> <!-- .wrapper ENDS -->
+    </section> <!-- .about section ENDS -->
+
+    <section id="projects" class="projects">
+      <div class="wrapper">
+
+        <div class="sub-heading">
+          <h2>Projects</h2>
         </div>
-      </div>
-    </section>
-  </main>
+
+        <div class="project-container">
+          <img class="project-one-img" src="" alt="">
+          <p class="project-one-text"></p>
+          <a href="">Live</a>
+          <a href="">Github</a>
+        </div>
+
+        <div class="project-container">
+          <img class="project-two-img" src="" alt="">
+          <p class="project-two-text"></p>
+          <a href="">Live</a>
+          <a href="">Github</a>
+        </div>
+      </div> <!-- .wrapper ENDS -->
+    </section> <!-- .projects section ENDS -->
+
+    <section id="connect" class="connect">
+      <div class="wrapper">
+
+        <div class="sub-heading">
+          <h2>Connect</h2>
+        </div>
+
+        <div class="connect-image">
+          <img src="" alt="">
+        </div>
+        
+        <div class="connect-container">
+          <div class="form-container">
+            <form action="https://formspree.io/f/xknybppo" method="post" class="contact-form" name="contact-form">
+              <div class="form-info">
+                <div class="user-name user-info">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="user-email user-info">
+                  <label for="e-mail">Email Address</label>
+                  <input type="text" id="email" name="email" placeholder="E-Mail" required>
+                </div>
+              </div>
+          
+              <div class="form-comment">
+                <label for="comment" class="sr-only">Comment</label>
+                <textarea type="text" name="comment" id="comment" placeholder="Hi, Ryan! I see you're passionate about philosophy and technology. Let's connect and chat about life, code, and everything in between" required></textarea>
+              </div>
+          
+              <button type="submit">Connect</button>
+            </form> <!-- form ENDS -->
+          </div> <!-- .form-container ENDS -->
+        </div> <!-- .connect-container ENDS -->
+      </div> <!-- .wrapper ENDS -->
+    </section> <!-- .connect section ENDS -->
+  </main> <!-- main ENDS -->
+
+  <footer>
+    <div class="wrapper">
+      <nav class="footer-nav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#connect">Connect</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
 </body>
 </html>

@@ -227,27 +227,51 @@ html {
 }
 
 @font-face {
-  font-family: "Cererbi Sans";
+  font-family: "Cererbi Sans", sans-serif;
   src: url("../fonts/cerebri-sans/Cerebri-Sans-Book.ttf");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Cererbi Sans";
+  font-family: "Cererbi Sans", sans-serif;
   src: url("../fonts/cerebri-sans/Cerebri-Sans-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
-  font-family: "Founders Grotesk";
+  font-family: "Founders Grotesk", sans-serif;
   src: url("../fonts/founders-grotesk/Founders-Grotesk-Light-300.otf");
   font-weight: 300;
 }
 @font-face {
-  font-family: "Founders Grotesk";
+  font-family: "Founders Grotesk", sans-serif;
   src: url("../fonts/founders-grotesk/Founders-Grotesk-400.otf");
   font-weight: 400;
 }
 html {
   font-size: 125%;
+}
+
+h1, a, .job-title {
+  font-family: "Cerebri Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+h1 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.job-title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.25rem;
+  color: #F6C9A0;
 }
 
 * {
@@ -264,4 +288,51 @@ img {
   display: block;
   max-width: 100%;
   height: 100%;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-nav .logo {
+  max-width: 5%;
+  margin-top: 2rem;
+}
+.header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-top: 3rem;
+}
+.header-nav ul li {
+  margin: 0 1rem;
+}
+.header-nav ul li a {
+  color: #FFFFFF;
+}
+.header-nav ul li a:hover, .header-nav ul li a:focus {
+  color: #F6C9A0;
+}
+
+header {
+  background-color: #000000;
+  height: 100vh;
+}
+
+.header-title {
+  text-align: center;
+  margin-top: 10rem;
+}
+.header-title .fa-chevron-circle-down {
+  font-size: 2rem;
+  margin-top: 10rem;
+  color: #FFFFFF;
+}
+.header-title .fa-chevron-circle-down:hover, .header-title .fa-chevron-circle-down:focus {
+  color: #F6C9A0;
 }

@@ -1,7 +1,7 @@
 // Import Cerebri Sans Fonts
 
 @font-face {
-  font-family: 'Cererbi Sans';
+  font-family: 'Cererbi Sans', sans-serif;
   src: url('../fonts/cerebri-sans/Cerebri-Sans-Book.ttf');
   font-weight: 400;
 }
@@ -13,20 +13,20 @@
 // }
 
 @font-face {
-  font-family: 'Cererbi Sans';
+  font-family: 'Cererbi Sans', sans-serif;
   src: url('../fonts/cerebri-sans/Cerebri-Sans-Bold.ttf');
   font-weight: 700;
 }
 
 // Import Founders Grotesk Font
 @font-face {
-  font-family: 'Founders Grotesk';
+  font-family: 'Founders Grotesk', sans-serif;
   src: url('../fonts/founders-grotesk/Founders-Grotesk-Light-300.otf');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: 'Founders Grotesk';
+  font-family: 'Founders Grotesk', sans-serif;
   src: url('../fonts/founders-grotesk/Founders-Grotesk-400.otf');
   font-weight: 400;
 }
@@ -40,6 +40,32 @@
   html {
     font-size: 125%;
   }
+
+  h1, a, .job-title {
+    font-family: $heading-font;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 4rem;
+  }
+
+  a {
+    font-size: 1rem;
+    text-decoration: none;
+  }
+
+  .job-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    color: $peach;
+}
+
+  
 
 
 
