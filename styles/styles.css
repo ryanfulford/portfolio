@@ -227,22 +227,22 @@ html {
 }
 
 @font-face {
-  font-family: "Cererbi Sans", sans-serif;
+  font-family: "Cererbi Sans";
   src: url("../fonts/cerebri-sans/Cerebri-Sans-Book.ttf");
   font-weight: 400;
 }
 @font-face {
-  font-family: "Cererbi Sans", sans-serif;
+  font-family: "Cererbi Sans";
   src: url("../fonts/cerebri-sans/Cerebri-Sans-Bold.ttf");
   font-weight: 700;
 }
 @font-face {
-  font-family: "Founders Grotesk", sans-serif;
+  font-family: "Founders Grotesk";
   src: url("../fonts/founders-grotesk/Founders-Grotesk-Light-300.otf");
   font-weight: 300;
 }
 @font-face {
-  font-family: "Founders Grotesk", sans-serif;
+  font-family: "Founders Grotesk";
   src: url("../fonts/founders-grotesk/Founders-Grotesk-400.otf");
   font-weight: 400;
 }
@@ -250,7 +250,7 @@ html {
   font-size: 125%;
 }
 
-h1, a, .job-title {
+h1, h2, a, .job-title {
   font-family: "Cerebri Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -274,6 +274,11 @@ a {
   color: #F6C9A0;
 }
 
+p, blockquote, figcaption {
+  font-family: "Founders Grotesk", sans-serif;
+  font-weight: 300;
+}
+
 * {
   margin: 0;
 }
@@ -288,6 +293,14 @@ img {
   display: block;
   max-width: 100%;
   height: 100%;
+}
+
+hr {
+  border: none;
+  width: 85%;
+  height: 2px;
+  background-color: black;
+  margin-left: 3rem;
 }
 
 .header-nav {
@@ -335,4 +348,99 @@ header {
 }
 .header-title .fa-chevron-circle-down:hover, .header-title .fa-chevron-circle-down:focus {
   color: #F6C9A0;
+}
+
+.about {
+  background-color: #F6C9A0;
+}
+
+.about, .toolkit {
+  padding-top: 4rem;
+}
+
+.sub-heading, .toolkit-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sub-heading h2, .toolkit-skills h2 {
+  color: #000000;
+}
+
+.about-copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 64%;
+  margin-top: 2rem;
+  margin-left: 20rem;
+}
+.about-copy p {
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.about-copy blockquote {
+  text-align: center;
+  margin-top: 1rem;
+}
+.about-copy blockquote .quote {
+  letter-spacing: 0;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.about-copy blockquote figcaption {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.skills {
+  margin-top: 2rem;
+}
+.skills ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 16.7rem;
+  padding: 0 0 2rem 0;
+  width: 74%;
+}
+.skills ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 21%;
+  margin: 0.5rem 0;
+}
+.skills ul img {
+  max-width: 35%;
+}
+.skills ul p {
+  text-align: center;
+  font-size: 0.8rem;
 }

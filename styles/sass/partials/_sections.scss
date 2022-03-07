@@ -1,0 +1,73 @@
+// About Section
+
+.about {
+  background-color: $peach;
+}
+
+.about, .toolkit {
+  padding-top: 4rem;
+}
+
+.sub-heading, .toolkit-skills {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+    h2 {
+      color: $black;
+    }
+}
+
+.about-copy {
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+  margin-top: 2rem;
+  margin-left: 20rem;
+    p {
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+    blockquote {
+      text-align: center;
+      margin-top: 1rem;
+        .quote {
+          letter-spacing: 0;
+          margin-bottom: 0.5rem;
+          font-weight: bold;
+        }
+        figcaption {
+          font-weight: bold;
+          font-style: italic;
+        }
+    }
+}
+
+// Toolkit Styles
+
+.skills {
+  margin-top: 2rem;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-left: 16.7rem;
+      padding: 0 0 2rem 0;
+      width: 74%;
+        li {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 21%;
+          margin: 0.5rem 0;
+        }
+        img {
+          max-width: 35%;
+        }
+        p {
+          text-align: center;
+          font-size: 0.8rem;
+        }
+    }
+}
