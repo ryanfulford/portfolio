@@ -730,6 +730,9 @@ footer .credits span a:hover, footer .credits span a:focus {
   color: #FFFFFF;
   border-bottom: 2px solid #F6C9A0;
 }
+footer .remove-slash {
+  color: #FFFFFF;
+}
 
 @media (max-width: 1200px) {
   .header-title .fa-chevron-circle-down {
