@@ -279,6 +279,15 @@ p, blockquote, figcaption {
   font-weight: 300;
 }
 
+.project-container li p {
+  color: #FFFFFF;
+}
+.project-container li .title-header,
+.project-container li .description-header,
+.project-container li .tools-header {
+  font-family: "Cerebri Sans", sans-serif;
+}
+
 * {
   margin: 0;
 }
@@ -301,6 +310,15 @@ hr {
   height: 2px;
   background-color: black;
   margin-left: 3rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects hr {
+  background-color: #FFFFFF;
 }
 
 .header-nav {
@@ -354,11 +372,11 @@ header {
   background-color: #F6C9A0;
 }
 
-.about, .toolkit {
+.about, .toolkit, .projects, .connect {
   padding-top: 4rem;
 }
 
-.sub-heading, .toolkit-skills {
+.sub-heading {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,7 +387,7 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.sub-heading h2, .toolkit-skills h2 {
+.sub-heading h2 {
   color: #000000;
 }
 
@@ -405,6 +423,7 @@ header {
 
 .skills {
   margin-top: 2rem;
+  padding-bottom: 2rem;
 }
 .skills ul {
   list-style: none;
@@ -416,9 +435,9 @@ header {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-left: 16.7rem;
+  margin-left: 16.45rem;
   padding: 0 0 2rem 0;
-  width: 74%;
+  width: 75%;
 }
 .skills ul li {
   display: -webkit-box;
@@ -440,7 +459,270 @@ header {
 .skills ul img {
   max-width: 35%;
 }
+.skills ul img:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 .skills ul p {
   text-align: center;
   font-size: 0.8rem;
+}
+
+.projects {
+  background-color: #000000;
+}
+.projects h2 {
+  color: #FFFFFF;
+}
+
+.project-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+.project-flex .project-container li .title-header,
+.project-flex .project-container li .description-header,
+.project-flex .project-container li .tools-header {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.project-flex .project-container li .tools-icon {
+  max-width: 10%;
+  margin-right: 0.5rem;
+}
+.project-flex .project-left {
+  margin-right: 1rem;
+  width: calc(50% - 2rem);
+}
+.project-flex .project-right {
+  margin-left: 1rem;
+  width: calc(50% - 2rem);
+  padding-bottom: 4rem;
+}
+
+.project-image .project-one-img,
+.project-image .project-two-img {
+  max-width: 80%;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+.project-image hr {
+  width: 100%;
+  margin: 0;
+}
+
+.project-title,
+.project-description,
+.project-tools,
+.project-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 0.5px solid #FFFFFF;
+}
+.project-title .title-text,
+.project-title .description-text,
+.project-description .title-text,
+.project-description .description-text,
+.project-tools .title-text,
+.project-tools .description-text,
+.project-links .title-text,
+.project-links .description-text {
+  width: 65%;
+}
+.project-title .title-text .collab-link,
+.project-title .description-text .collab-link,
+.project-description .title-text .collab-link,
+.project-description .description-text .collab-link,
+.project-tools .title-text .collab-link,
+.project-tools .description-text .collab-link,
+.project-links .title-text .collab-link,
+.project-links .description-text .collab-link {
+  font-family: "Founders Grotesk", sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: #F6C9A0;
+}
+.project-title .title-text .collab-link:hover, .project-title .title-text .collab-link:focus,
+.project-title .description-text .collab-link:hover,
+.project-title .description-text .collab-link:focus,
+.project-description .title-text .collab-link:hover,
+.project-description .title-text .collab-link:focus,
+.project-description .description-text .collab-link:hover,
+.project-description .description-text .collab-link:focus,
+.project-tools .title-text .collab-link:hover,
+.project-tools .title-text .collab-link:focus,
+.project-tools .description-text .collab-link:hover,
+.project-tools .description-text .collab-link:focus,
+.project-links .title-text .collab-link:hover,
+.project-links .title-text .collab-link:focus,
+.project-links .description-text .collab-link:hover,
+.project-links .description-text .collab-link:focus {
+  color: #FFFFFF;
+  border-bottom: 2px solid #F6C9A0;
+}
+.project-title .tools-container,
+.project-description .tools-container,
+.project-tools .tools-container,
+.project-links .tools-container {
+  width: 66%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-links {
+  border-bottom: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+}
+.project-links a {
+  width: 45%;
+  text-align: center;
+  border: 2px solid #F6C9A0;
+  color: #F6C9A0;
+  padding: 0.5rem 0;
+}
+.project-links a:hover, .project-links a:focus {
+  background-color: #F6C9A0;
+  color: #000000;
+}
+
+.connect {
+  background-color: #F6C9A0;
+}
+
+.connect-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2rem;
+}
+.connect-container .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+}
+.connect-container .social-icons a {
+  width: 15%;
+}
+.connect-container .social-icons a img {
+  height: 14%;
+}
+
+.form-container {
+  width: 67%;
+  margin-top: 0.15rem;
+}
+.form-container form .form-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.form-container form .form-info .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+}
+.form-container form .form-info .user-info label {
+  font-family: "Cerebri Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.form-container form .form-info .user-info input[type=text],
+.form-container form .form-info .user-info input[type=email] {
+  border: none;
+  border-bottom: 2px solid #000000;
+  background-color: #F6C9A0;
+  font-family: "Founders Grotesk", sans-serif;
+  margin-top: 0.5rem;
+}
+.form-container form .form-comment label {
+  font-family: "Cerebri Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.form-container form .form-comment textarea {
+  width: 100%;
+  height: 10rem;
+  resize: none;
+  border: 2px solid #000000;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  background-color: #F6C9A0;
+  font-family: "Founders Grotesk", sans-serif;
+  letter-spacing: 0.5px;
+}
+.form-container form .form-button {
+  width: 25%;
+  margin: 2rem 0;
+  text-align: center;
+  background-color: #F6C9A0;
+  border: 2px solid #000000;
+  padding: 0.5rem 0.25rem 0.3rem;
+  font-family: "Cerebri Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.form-container form .form-button:hover, .form-container form .form-button:focus {
+  background: #000000;
+  color: #F6C9A0;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #000000;
+  text-align: center;
+}
+footer .top-link,
+footer .credits {
+  font-family: "Cerebri Sans", sans-serif;
+}
+footer .top-link {
+  padding: 1rem 0;
+}
+footer .top-link a:hover, footer .top-link a:focus {
+  color: #F6C9A0;
+}
+footer .credits {
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 1rem 0;
+}
+footer .credits span {
+  color: #F6C9A0;
+}
+footer .credits span a {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #F6C9A0;
+}
+footer .credits span a:hover, footer .credits span a:focus {
+  border-bottom: 2px solid #F6C9A0;
 }

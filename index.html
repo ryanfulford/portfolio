@@ -11,7 +11,8 @@
 <body>
   <header id="home">
     <div class="wrapper">
-      <nav class="header-nav">
+
+      <nav class="header-nav" id="#home">
         <img class="logo" src="./assets/rf-enso-logo_light-peach_200x200.png" alt="Calligraphy brush stroke of an Enso circle">
         <ul>
           <li><a href="#about">About</a></li>
@@ -31,11 +32,13 @@
   <main>
     <section id="about" class="about">
       <div class="wrapper">
+
         <div class="about-text">
           <div class="sub-heading">
             <h2>About</h2>
             <hr>
           </div>
+
           <div class="about-copy">
             <p>A philosopher turned web-developer. A journey shaped by the connection between people and information.</p>
             <p>Naturally introspective and driven by singular purpose; to cultivate a digital future based on inclusivity. Focused on eliminating technological barriers through clean, accessible code.</p>
@@ -49,24 +52,25 @@
         </div> <!-- .about-text ENDS -->
 
         <div class="toolkit">
-          <div class="toolkit-skills">
+          <div class="sub-heading">
             <h2>Toolkit</h2>
             <hr>
           </div>
+
           <div class="skills">
             <ul>
-              <li><img src="./assets/toolkit_html5.png" alt=""><p>HTML 5</p></li>
-              <li><img src="./assets/toolkit_css3.png" alt=""><p>CSS 3</p></li>
-              <li><img src="./assets/toolkit_sass.png" alt=""><p>Sass</p></li>
-              <li><img src="./assets/toolkit_javascript.png" alt=""><p>JavaScript</p></li>
-              <li><img src="./assets/toolkit_jquery.png" alt=""><p>jQuery</p></li>
-              <li><img src="./assets/toolkit_react.png" alt=""><p>React</p></li>
-              <li><img src="./assets/toolkit_firebase.png" alt=""><p>Firebase</p></li>
-              <li><img src="./assets/toolkit_responsive.png" alt=""><p>Responsive Design</p></li>
-              <li><img src="./assets/toolkit_accessibility.png" alt=""><p>Accesibility</p></li>
-              <li><img src="./assets/toolkit_git.png" alt=""><p>Git</p></li>
-              <li><img src="./assets/toolkit_github.png" alt=""><p>GitHub</p></li>
-              <li><img src="./assets/toolkit_vscode.png" alt=""><p>VS Code</p></li>
+              <li><img src="./assets/toolkit_html5.png" alt="Hypertext Markup Language 5 Icon"><p>HTML 5</p></li>
+              <li><img src="./assets/toolkit_css3.png" alt="Cascading Style Sheet 3 Icon"><p>CSS 3</p></li>
+              <li><img src="./assets/toolkit_sass.png" alt="Syntactically Awesome Style Sheets Icon"><p>Sass</p></li>
+              <li><img src="./assets/toolkit_javascript.png" alt="JavaScript Programming Icon"><p>JavaScript</p></li>
+              <li><img src="./assets/toolkit_jquery.png" alt="jQuery Programming Icon"><p>jQuery</p></li>
+              <li><img src="./assets/toolkit_react.png" alt="React Programming Icon "><p>React</p></li>
+              <li><img src="./assets/toolkit_firebase.png" alt="Firebase Programming Icon"><p>Firebase</p></li>
+              <li><img src="./assets/toolkit_responsive.png" alt="Responsive Design Icon"><p>Responsive Design</p></li>
+              <li><img src="./assets/toolkit_accessibility.png" alt="Web Accessibility Icon "><p>Accessibility</p></li>
+              <li><img src="./assets/toolkit_git.png" alt="Git Web Development Icon"><p>Git</p></li>
+              <li><img src="./assets/toolkit_github.png" alt="GitHub Web Development Icon"><p>GitHub</p></li>
+              <li><img src="./assets/toolkit_vscode.png" alt="Virtual Studio Code Web Development Icon"><p>VS Code</p></li>
             </ul>
           </div> <!-- .skills ENDS -->
         </div> <!-- .toolkit ENDS -->
@@ -75,39 +79,91 @@
 
     <section id="projects" class="projects">
       <div class="wrapper">
-
-        <div class="sub-heading">
+        <div class="sub-heading projects-heading">
           <h2>Projects</h2>
+          <hr>
         </div>
 
-        <div class="project-container">
-          <img class="project-one-img" src="" alt="">
-          <p class="project-one-text"></p>
-          <a href="">Live</a>
-          <a href="">Github</a>
-        </div>
+        <div class="project-flex">
+          <div class="project-container project-left">
+            <ul>
+              <li class="project-image">
+                <img class="project-one-img" src="./assets/project-sanctuary_mockup.png" alt="Mockup image of a web project displayed on a computer">
+                <hr>
+              </li>
+              <li class="project-title">
+                <p class="title-header">Project</p>
+                <p class="title-text">Sanctuary Helpers</p>
+              </li>
+              <li class="project-description">
+                <p class="description-header">Overview</p>
+                <p class="description-text">A Photoshop conversion project for a furniture store. Applied a style guide and the designer's vision to create a pixel-perfect, fully responsive, accessible website.</p>
+              </li>
+              <li class="project-tools">
+                <p class="tools-header">Tools</p>
+                <div class="tools-container">
+                    <img src="./assets/toolkit_html5_white.png" alt="Hypertext Markup Language 5 Icon" class="tools-icon">
+                    <img src="./assets/toolkit_css3_white.png" alt="Cascading Style Sheet 3 Icon" class="tools-icon">
+                    <img src="./assets/toolkit_sass_white.png" alt="Syntactically Awesome Style Sheets Icon" class="tools-icon">
+                    <img src="./assets/toolkit_git_white.png" alt="Git Web Development Icon" class="tools-icon">
 
-        <div class="project-container">
-          <img class="project-two-img" src="" alt="">
-          <p class="project-two-text"></p>
-          <a href="">Live</a>
-          <a href="">Github</a>
+                </div>
+              </li>
+              <li class="project-links">
+                <a href="" target="_blank">Live</a>
+                <a href="https://github.com/ryanfulford/project-one" target="_blank">Github</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="project-container project-right">
+            <ul>
+              <li class="project-image">
+                <img class="project-two-img" src="./assets/project-flix_mockup.png" alt="Mockup image of a web project displayed on a computer">
+                <hr>
+              </li>
+              <li class="project-title">
+                <p class="title-header">Project</p>
+                <p class="title-text">Flix</p>
+              </li>
+              <li class="project-description">
+                <p class="description-header">Overview</p>
+                <p class="description-text">A movie database utilizing a third-party API, which allows the user to browse films in a variety of ways. Made in collaboration with <a class="collab-link" href="https://www.linkedin.com/in/mackenziemcclemont/" target="_blank">Mackenzie McClemont</a> </p>
+              </li>
+              <li class="project-tools">
+                <p class="tools-header">Tools</p>
+                <div class="tools-container">
+                  <img src="./assets/toolkit_html5_white.png" alt="Hypertext Markup Language 5 Icon" class="tools-icon">
+                  <img src="./assets/toolkit_css3_white.png" alt="Cascading Style Sheet 3 Icon" class="tools-icon">
+                  <img src="./assets/toolkit_sass_white.png" alt="Syntactically Awesome Style Sheets Icon" class="tools-icon">
+                  <img src="./assets/toolkit_javascript_white.png" alt="JavaScript Programming Icon" class="tools-icon">
+                  <img src="./assets/toolkit_git_white.png" alt="Git Web Development Icon" class="tools-icon">
+
+                </div>
+              </li>
+              <li class="project-links">
+                <a href="https://romantic-curran-73581d.netlify.app" target="_blank">Live</a>
+                <a href="https://github.com/flixProject2/flix" target="_blank">Github</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div> <!-- .wrapper ENDS -->
     </section> <!-- .projects section ENDS -->
 
     <section id="connect" class="connect">
       <div class="wrapper">
-
         <div class="sub-heading">
           <h2>Connect</h2>
+          <hr>
         </div>
 
-        <div class="connect-image">
-          <img src="" alt="">
-        </div>
-        
         <div class="connect-container">
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ryan-fulford/" target="_blank"><img src="./assets/toolkit_linkedin.png" alt="LinkedIn Social Media Icon"></a> 
+            <a href="https://github.com/ryanfulford" target="_blank"><img src="./assets/toolkit_github.png" alt="GitHub Web Development Icon"></a> 
+          </div>
+
           <div class="form-container">
             <form action="https://formspree.io/f/xknybppo" method="post" class="contact-form" name="contact-form">
               <div class="form-info">
@@ -115,18 +171,19 @@
                   <label for="name">Name</label>
                   <input type="text" id="name" name="name" placeholder="Name" required>
                 </div>
+
                 <div class="user-email user-info">
-                  <label for="e-mail">Email Address</label>
-                  <input type="text" id="email" name="email" placeholder="E-Mail" required>
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="E-Mail" required>
                 </div>
               </div>
           
               <div class="form-comment">
-                <label for="comment" class="sr-only">Comment</label>
-                <textarea type="text" name="comment" id="comment" placeholder="Hi, Ryan! I see you're passionate about philosophy and technology. Let's connect and chat about life, code, and everything in between" required></textarea>
+                <label for="comment">Message</label>
+                <textarea type="text" name="comment" id="comment" placeholder="If you'd like to collaborate, discuss potential opportunities, or vent about the perils of learning JavaScript, feel free to get in touch!" required></textarea>
               </div>
-          
-              <button type="submit">Connect</button>
+
+              <button type="submit" class="form-button">Connect</button>
             </form> <!-- form ENDS -->
           </div> <!-- .form-container ENDS -->
         </div> <!-- .connect-container ENDS -->
@@ -136,14 +193,10 @@
 
   <footer>
     <div class="wrapper">
-      <nav class="footer-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#connect">Connect</a></li>
-        </ul>
-      </nav>
+      <div class="footer-text">
+        <p class="top-link"><a href="#home">Back to Top</a></p>
+        <p class="credits">Developed by <span>Ryan Fulford</span> / Designed by <span><a href="https://marleemaclean.ca/" target="_blank"> Marlee MacLean</a></span></p>
+      </div> 
     </div>
   </footer>
 

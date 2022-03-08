@@ -1,0 +1,67 @@
+.form-container {
+  width: 67%;
+  margin-top: 0.15rem;
+    form {
+      .form-info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+          .user-info {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+              label {
+                font-family: $heading-font;
+                font-weight: 700;
+                text-transform: uppercase;
+              }
+              input[type="text"],
+              input[type="email"] {
+                border: none;
+                border-bottom: 2px solid $black;
+                background-color: $peach;
+                font-family: $text-font;
+                margin-top: 0.5rem;
+              }
+          }
+      }
+      .form-comment {
+        label {
+          font-family: $heading-font;
+          font-weight: 700;
+          text-transform: uppercase;
+        }
+        textarea {
+          width: 100%;
+          height: 10rem;
+          resize: none;
+          border: 2px solid $black;
+          padding: 0.5rem;
+          margin-top: 0.5rem;
+          background-color: $peach;
+          font-family: $text-font;
+          letter-spacing: 0.5px
+        }
+      }  
+      .form-button {
+        width: 25%;
+        margin: 2rem 0;
+        text-align: center;
+        background-color: $peach;
+        border: 2px solid $black;
+        padding: 0.5rem 0.25rem 0.3rem;
+        font-family: $heading-font;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:hover,
+        &:focus {
+          background: $black;
+          color: $peach;
+          cursor: pointer;
+        }
+      }
+    }
+}
+
+
+  

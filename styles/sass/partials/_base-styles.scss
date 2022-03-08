@@ -22,7 +22,17 @@ hr {
   height: 2px;
   background-color: black;
   margin-left: 3rem;
+}
 
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects {
+  hr {
+    background-color: $white;
+  }
 }
 
 

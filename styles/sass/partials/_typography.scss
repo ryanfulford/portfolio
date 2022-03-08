@@ -60,6 +60,19 @@
     font-weight: 300;
   }
 
+  .project-container {
+  li {
+    p {
+      color: $white;
+    }
+    .title-header,
+    .description-header,
+    .tools-header {
+      font-family: $heading-font;
+    }
+  }
+}
+
   
 
 

@@ -1,14 +1,14 @@
-// About Section
+// ********** About Section ***********
 
 .about {
   background-color: $peach;
 }
 
-.about, .toolkit {
+.about, .toolkit, .projects, .connect {
   padding-top: 4rem;
 }
 
-.sub-heading, .toolkit-skills {
+.sub-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,18 +42,19 @@
     }
 }
 
-// Toolkit Styles
+// ********** Toolkit Styles **********
 
 .skills {
   margin-top: 2rem;
+  padding-bottom: 2rem;
     ul {
       list-style: none;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      margin-left: 16.7rem;
+      margin-left: 16.45rem;
       padding: 0 0 2rem 0;
-      width: 74%;
+      width: 75%;
         li {
           display: flex;
           flex-direction: column;
@@ -64,6 +65,10 @@
         }
         img {
           max-width: 35%;
+          &:hover {
+            transform: scale(1.3);
+            transition: 0.3s;
+          }
         }
         p {
           text-align: center;
@@ -71,3 +76,128 @@
         }
     }
 }
+
+// ********** Projects Section **********
+
+.projects {
+  background-color: $black;
+    h2 {
+      color: $white;
+    }
+}
+
+.project-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+    .project-container {
+      li {
+        .title-header,
+        .description-header,
+        .tools-header {
+          text-transform: uppercase;
+          font-weight: 700;
+        }
+        .tools-icon {
+          max-width: 10%;
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    .project-left {
+      margin-right: 1rem;
+      width: calc(50% - 2rem);
+    }
+    .project-right {
+      margin-left: 1rem;
+      width: calc(50% - 2rem);
+      padding-bottom: 4rem;
+    }
+}
+
+.project-image {
+  .project-one-img, 
+  .project-two-img {
+    max-width: 80%;
+    padding-bottom: 1rem;
+    margin: 0 auto;
+  }
+  hr {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+.project-title,
+.project-description,
+.project-tools,
+.project-links {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: space-between;
+  border-bottom: 0.5px solid $white;
+    .title-text,
+    .description-text {
+      width: 65%;
+        .collab-link {
+          font-family: $text-font;
+          font-weight: 400;
+          font-size: 0.9rem;
+          color: $peach;
+          &:hover,
+          &:focus {
+            color: $white;
+            border-bottom: 2px solid $peach;
+          }
+        }
+    }
+    .tools-container {
+      width: 66%;
+      display: flex;
+    }
+}
+.project-links {
+  border-bottom: none;
+  justify-content: space-between;
+  padding-top: 2rem;
+    a {
+      width: 45%;
+      text-align: center;
+      border: 2px solid $peach;
+      color: $peach;
+      padding: 0.5rem 0;
+      &:hover,
+      &:focus {
+        background-color: $peach;
+        color: $black;
+      }
+    }
+}
+
+// ********** Connect Section **********
+
+.connect {
+  background-color: $peach;
+}
+
+.connect-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+    .social-icons {
+      display: flex;
+      width: 33%;
+        a {
+          width: 15%;
+            img {
+              height: 14%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
