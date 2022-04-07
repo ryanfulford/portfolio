@@ -459,17 +459,26 @@ header {
   width: 21%;
   margin: 0.5rem 0;
 }
-.skills ul img {
-  max-width: 35%;
+.skills ul li i {
+  font-size: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.skills ul img:hover {
+.skills ul li i:hover {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
-.skills ul p {
-  text-align: center;
+.skills ul li i p {
   font-size: 0.8rem;
 }
 
@@ -583,6 +592,25 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.project-title .tools-container i,
+.project-description .tools-container i,
+.project-tools .tools-container i,
+.project-links .tools-container i {
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+.project-title .tools-container i:hover, .project-title .tools-container i:focus,
+.project-description .tools-container i:hover,
+.project-description .tools-container i:focus,
+.project-tools .tools-container i:hover,
+.project-tools .tools-container i:focus,
+.project-links .tools-container i:hover,
+.project-links .tools-container i:focus {
+  color: #F6C9A0;
 }
 
 .project-links {
@@ -623,11 +651,18 @@ header {
   display: flex;
   width: 33%;
 }
-.connect-container .social-icons a {
-  width: 17%;
+.connect-container .social-icons .fa-linkedin, .connect-container .social-icons .fa-github {
+  font-size: 2.5rem;
+  color: #000000;
 }
-.connect-container .social-icons a img {
-  height: 14%;
+.connect-container .social-icons .fa-linkedin:hover, .connect-container .social-icons .fa-linkedin:focus, .connect-container .social-icons .fa-github:hover, .connect-container .social-icons .fa-github:focus {
+  color: #FFFFFF;
+}
+.connect-container .social-icons .fa-linkedin {
+  margin-right: 0.5rem;
+}
+.connect-container .social-icons .fa-github {
+  margin-left: 0.5rem;
 }
 
 .form-container {
