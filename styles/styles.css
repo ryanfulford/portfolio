@@ -496,6 +496,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 2rem;
 }
 .project-flex .project-container li .title-header,
@@ -519,8 +521,9 @@ header {
 }
 
 .project-image .project-one-img,
-.project-image .project-two-img {
-  max-width: 80%;
+.project-image .project-two-img,
+.project-image .project-three-img,
+.project-image .project-four-img {
   padding-bottom: 1rem;
   margin: 0 auto;
 }
